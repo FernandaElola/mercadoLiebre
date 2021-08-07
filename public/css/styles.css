@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--colorGrisClaro);
 }
 
 a{
@@ -20,6 +20,14 @@ li{
 
 h2{
     font-size: 24px;
+    margin: 15px 0 15px 0;
+    color: var(--colorGrisOscuro);
+}
+
+h4{
+    color: var(--colorGrisOscuro);
+    font-size: 16px;
+    display: none;
 }
 
 p{
@@ -37,7 +45,7 @@ p{
 
 header{
     background-color:  var(--colorAmarillo);
-    width: 100vw;
+    width: 100%;
 }
 
 header img{
@@ -45,6 +53,21 @@ header img{
     max-width: 40%;
     padding: 25px 0 10px 25px;
 }
+
+#banner img{
+    max-width: 100%;
+  height: auto;
+  width: auto;
+  margin:0;
+  display:block;
+  padding: 0;
+}
+
+/* main .banner{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} */
 
 header .barra{
     background-color: var(--colorGrisClaro);
@@ -57,7 +80,16 @@ header .barra{
     font-size: 14px;
 }
 
-header #buscador {
+header #buscador{
+    background-color: var(--colorGrisClaro);
+    border: 1px solid var(--colorGrisOscuro);
+    border-radius: 3px;
+    padding: 1px;
+    display: inline;
+    font-size: 15px;
+}
+
+/* header #buscador {
     background-color: var(--colorGrisClaro);
     border: 1px solid var(--colorGrisOscuro);
     border-radius: 3px;
@@ -65,17 +97,18 @@ header #buscador {
     display: inline-block;
     margin-left: 15px;
     margin-top: 2px;
-}
+} */
 
 header p{
     text-align: center;
     font-size: 12px;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 30px 0;
     color: black;
 }
 
 header li{
     font-size: 12px;
+    display: none;
 }
 
 header li a{
@@ -84,14 +117,51 @@ header li a{
 
 header .burger-menu{
     /* background-color: var(--colorAzul); */
-    background-color: #0044aa;
+    background-color: var(--colorCeleste);
     color: var(--colorGrisClaro);
     font-size: 20px;
     display: inline-block;
     text-align: center;
     padding: 10px 12px;
     border-radius: 5px;
-    margin: 20px 48% 20px;
+    margin: 0px 48% 20px;
+}
+
+main{
+    max-width: 90%;      
+    align-items: center;  
+    margin: auto;  
+}
+
+main article{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+main article img{
+    max-width: 100%;
+}
+
+main .descripcion{
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+}
+
+main article i{
+    color: var(--colorVerde);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid var(--colorVerde);
+    padding: 5px 15px 15px 5px;
+}
+
+main article p:nth-child(odd){
+    color: var(--colorVerde);
+    font-size: 16px;
+}
+
+main article p{
+    font-size: 18px;
 }
 
 footer{
@@ -102,7 +172,7 @@ footer{
 footer i{
     font-size: 2em;
     /* color: var(--colorAzul); */
-    color: #0044aa;
+    color: var(--colorCeleste);
     margin-bottom: 10px;
     margin-top: 50px;
 }
@@ -118,3 +188,31 @@ footer .copyright{
     margin-left: 20px;
     text-align: left;
 }
+
+
+
+@media (min-width:361px){
+    header li{
+        font-size: 12px;
+        display: block;
+    }
+    h4{
+        display: block;
+        margin-top: 10px;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header .burger-menu{
+        display: none;
+    }
+    li{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width:769){
+
+}
+
+
