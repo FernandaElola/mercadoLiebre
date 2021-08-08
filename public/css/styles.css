@@ -11,7 +11,6 @@ body{
 
 a{
     text-decoration: none;
-    /* color: black; */
 }
 
 li{
@@ -56,18 +55,12 @@ header img{
 
 #banner img{
     max-width: 100%;
-  height: auto;
-  width: auto;
-  margin:0;
-  display:block;
-  padding: 0;
-}
-
-/* main .banner{
-    max-width: 100%;
     height: auto;
     width: auto;
-} */
+    margin:0;
+    display:block;
+    padding: 0;
+}
 
 header .barra{
     background-color: var(--colorGrisClaro);
@@ -89,6 +82,8 @@ header #buscador{
     font-size: 15px;
 }
 
+/* Diferencias entre tp3 y tp4 */
+
 /* header #buscador {
     background-color: var(--colorGrisClaro);
     border: 1px solid var(--colorGrisOscuro);
@@ -102,7 +97,7 @@ header #buscador{
 header p{
     text-align: center;
     font-size: 12px;
-    padding: 15px 0 30px 0;
+    padding-top: 15px;
     color: black;
 }
 
@@ -116,7 +111,6 @@ header li a{
 }
 
 header .burger-menu{
-    /* background-color: var(--colorAzul); */
     background-color: var(--colorCeleste);
     color: var(--colorGrisClaro);
     font-size: 20px;
@@ -149,7 +143,7 @@ main .descripcion{
 
 main article i{
     color: var(--colorVerde);
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid var(--colorVerde);
     padding: 5px 15px 15px 5px;
@@ -171,7 +165,6 @@ footer{
 
 footer i{
     font-size: 2em;
-    /* color: var(--colorAzul); */
     color: var(--colorCeleste);
     margin-bottom: 10px;
     margin-top: 50px;
@@ -189,7 +182,7 @@ footer .copyright{
     text-align: left;
 }
 
-
+/* Responsive Tablet */
 
 @media (min-width:361px){
     header li{
@@ -201,15 +194,20 @@ footer .copyright{
         margin-top: 10px;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
     }
     header .burger-menu{
         display: none;
     }
-    li{
+    header li{
         margin-left: 10px;
     }
+    header p{
+        margin-bottom: 30px;
+    }
 }
+
+/* Responsive Desktop */
 
 @media (min-width:769){
 
