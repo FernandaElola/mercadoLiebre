@@ -1,0 +1,93 @@
+#banner img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin:0;
+    display:block;
+    padding: 0;
+}
+
+main{
+    max-width: 90%;      
+    align-items: center;  
+    margin: auto;  
+}
+
+main article{
+    margin-bottom: 10px;
+    background-color: #ffffff;    
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+main section h2{
+    width: 100%;
+}
+
+main article img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main .descripcion{
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+    position: relative;
+}
+
+main article i{
+    color: var(--colorVerde);
+    border-radius: 50%;
+    border: 1px solid var(--colorVerde);
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main article .descripcion .precioDescuento{
+    display: flex;
+}
+
+main article p:nth-child(even){
+    color: var(--colorVerde);
+    font-size: 16px;
+    flex-grow: 0.7;
+}
+
+main article p{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+
+/* Responsive Tablet */
+
+@media (min-width:768px){
+    
+    h4{
+        display: block;
+        margin-top: 10px;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        width: 40%;      
+    }
+}
+    
+/* Responsive Desktop */
+
+@media (min-width:1024px){
+    article{
+        width: 20%;      
+    }
+}
