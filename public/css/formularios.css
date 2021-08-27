@@ -1,3 +1,8 @@
+.contenedor h2{
+    text-align: center;
+    color: black;
+}
+
 .register-login .contenedor{
     width: 90%;
     margin: 0 auto;
@@ -22,11 +27,16 @@
     margin: 0 20px;
 }
 
+.register-login .contenedor .container-input .subirArchivo {    
+    background-color: #b6c2e9;    
+    border-radius: 5px;
+}
+
 /* Botones */
 
 .register-login .contenedor .containerButtons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px 0;
 }
 
@@ -34,12 +44,7 @@
     color: #fff;
 }
 
-.btn-azul {
-    background-color: rgb(46, 46, 207);
-    color: #fff;
-    width: 100%;
-    font-weight: bolder;
-}
+
 
 
 

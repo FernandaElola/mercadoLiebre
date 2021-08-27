@@ -97,7 +97,7 @@ header .burger-menu {
 
   header .barra input,
   header .barra button {
-    padding: 2px;
+    padding: 10px;
   }
 
   header nav {
@@ -116,7 +116,7 @@ header .burger-menu {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header .barra input {
     margin-left: 30px;
   }

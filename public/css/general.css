@@ -53,8 +53,33 @@ button:hover {
 .btn-rojo {
   background-color: rgb(221, 52, 52);
   font-weight: bolder;
+  width: 48%;
+  transition: background-color linear 0.3s;
 }
+.btn-rojo:hover {
+  background-color: rgb(167, 44, 44);
+}
+
 .btn-verde {
   background-color: #58a864;
   font-weight: bolder;
+  width: 48%;
+  transition: background-color linear 0.3s;
+}
+
+.btn-verde:hover {
+  background-color: #42864c;
+}
+
+.btn-azul {
+  background-color: var(--colorCeleste);
+  color: #fff;
+  width: 100%;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  transition: background-color linear 0.3s;
+}
+
+.btn-azul:hover {
+  background-color: #0022aa;
 }
